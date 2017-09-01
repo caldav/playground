@@ -1,0 +1,16 @@
+name: playground
+version: '0.1'
+summary: playground snap
+description: playground snap
+
+grade: stable
+confinement: strict
+
+apps:
+  playground:
+    command: echo "Run playground command"
+    plugs: [home]
+
+parts:
+  playground:
+    plugin: nil
